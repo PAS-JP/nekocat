@@ -1,0 +1,1331 @@
+   0.257107403s  INFO prepare_target{force=false package_id=nekocat v0.0.1 (/home/pas/Sources/nekocat/app) target="nekocat"}: cargo::core::compiler::fingerprint: stale: missing "/home/pas/Sources/nekocat/app/target/debug/.fingerprint/aes-b7432cf2aa0d638f/dep-lib-aes"
+   0.264052730s  INFO prepare_target{force=false package_id=nekocat v0.0.1 (/home/pas/Sources/nekocat/app) target="nekocat"}: cargo::core::compiler::fingerprint: fingerprint error for nekocat v0.0.1 (/home/pas/Sources/nekocat/app)/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("nekocat", ["lib"], "/home/pas/Sources/nekocat/app/src/lib.rs", Edition2024) }
+   0.264140707s  INFO prepare_target{force=false package_id=nekocat v0.0.1 (/home/pas/Sources/nekocat/app) target="nekocat"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/nekocat-195a61be5b2eb081/lib-nekocat`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  16: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  17: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+   0.493981936s  INFO prepare_target{force=false package_id=aes-gcm-siv v0.11.1 target="aes_gcm_siv"}: cargo::core::compiler::fingerprint: fingerprint error for aes-gcm-siv v0.11.1/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("aes_gcm_siv", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aes-gcm-siv-0.11.1/src/lib.rs", Edition2021) }
+   0.494141073s  INFO prepare_target{force=false package_id=aes-gcm-siv v0.11.1 target="aes_gcm_siv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/aes-gcm-siv-087d1eb1ec57d7ea/lib-aes_gcm_siv`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.496780286s  INFO prepare_target{force=false package_id=aes v0.8.4 target="aes"}: cargo::core::compiler::fingerprint: fingerprint error for aes v0.8.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("aes", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/aes-0.8.4/src/lib.rs", Edition2021) }
+   0.496938101s  INFO prepare_target{force=false package_id=aes v0.8.4 target="aes"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/aes-b7432cf2aa0d638f/lib-aes`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.498433251s  INFO prepare_target{force=false package_id=argon2 v0.5.3 target="argon2"}: cargo::core::compiler::fingerprint: fingerprint error for argon2 v0.5.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("argon2", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/argon2-0.5.3/src/lib.rs", Edition2021) }
+   0.498517719s  INFO prepare_target{force=false package_id=argon2 v0.5.3 target="argon2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/argon2-32a6b1465d3718a6/lib-argon2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.499778298s  INFO prepare_target{force=false package_id=chrono v0.4.43 target="chrono"}: cargo::core::compiler::fingerprint: fingerprint error for chrono v0.4.43/Check { test: false }/TargetInner { ..: lib_target("chrono", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/chrono-0.4.43/src/lib.rs", Edition2021) }
+   0.499851067s  INFO prepare_target{force=false package_id=chrono v0.4.43 target="chrono"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/chrono-47a995a84745f38c/lib-chrono`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.501066139s  INFO prepare_target{force=false package_id=colorful v0.3.2 target="colorful"}: cargo::core::compiler::fingerprint: fingerprint error for colorful v0.3.2/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("colorful", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/lib.rs", Edition2015) }
+   0.501149746s  INFO prepare_target{force=false package_id=colorful v0.3.2 target="colorful"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/colorful-f8e9004023ff8fc5/lib-colorful`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.502212662s  INFO prepare_target{force=false package_id=hex v0.4.3 target="hex"}: cargo::core::compiler::fingerprint: fingerprint error for hex v0.4.3/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hex", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hex-0.4.3/src/lib.rs", Edition2018) }
+   0.502286159s  INFO prepare_target{force=false package_id=hex v0.4.3 target="hex"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/hex-2479984656fb28c8/lib-hex`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.502867396s  INFO prepare_target{force=false package_id=hkdf v0.12.4 target="hkdf"}: cargo::core::compiler::fingerprint: fingerprint error for hkdf v0.12.4/Check { test: false }/TargetInner { name_inferred: true, ..: lib_target("hkdf", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/hkdf-0.12.4/src/lib.rs", Edition2018) }
+   0.502921759s  INFO prepare_target{force=false package_id=hkdf v0.12.4 target="hkdf"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/hkdf-6d621def335d0641/lib-hkdf`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.503738167s  INFO prepare_target{force=false package_id=pqcrypto-mldsa v0.1.2 target="pqcrypto_mldsa"}: cargo::core::compiler::fingerprint: fingerprint error for pqcrypto-mldsa v0.1.2/Check { test: false }/TargetInner { ..: lib_target("pqcrypto_mldsa", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/pqcrypto-mldsa-0.1.2/src/lib.rs", Edition2021) }
+   0.503804985s  INFO prepare_target{force=false package_id=pqcrypto-mldsa v0.1.2 target="pqcrypto_mldsa"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/pqcrypto-mldsa-884c753637bd75ce/lib-pqcrypto_mldsa`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.509154068s  INFO prepare_target{force=false package_id=rand v0.9.2 target="rand"}: cargo::core::compiler::fingerprint: fingerprint error for rand v0.9.2/Check { test: false }/TargetInner { ..: lib_target("rand", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand-0.9.2/src/lib.rs", Edition2021) }
+   0.509220932s  INFO prepare_target{force=false package_id=rand v0.9.2 target="rand"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/rand-6eede56a170dc258/lib-rand`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.509970192s  INFO prepare_target{force=false package_id=rand_chacha v0.9.0 target="rand_chacha"}: cargo::core::compiler::fingerprint: fingerprint error for rand_chacha v0.9.0/Check { test: false }/TargetInner { ..: lib_target("rand_chacha", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rand_chacha-0.9.0/src/lib.rs", Edition2021) }
+   0.509998455s  INFO prepare_target{force=false package_id=rand_chacha v0.9.0 target="rand_chacha"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/rand_chacha-b97e1f52c3335a7e/lib-rand_chacha`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.510972100s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint: fingerprint error for ppv-lite86 v0.2.21/Check { test: false }/TargetInner { ..: lib_target("ppv_lite86", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/ppv-lite86-0.2.21/src/lib.rs", Edition2021) }
+   0.511045671s  INFO prepare_target{force=false package_id=ppv-lite86 v0.2.21 target="ppv_lite86"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/ppv-lite86-c825980a79b9c97f/lib-ppv_lite86`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  19: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  20: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  23: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  24: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+   0.512082765s  INFO prepare_target{force=false package_id=zerocopy v0.8.38 target="zerocopy"}: cargo::core::compiler::fingerprint: fingerprint error for zerocopy v0.8.38/Check { test: false }/TargetInner { ..: lib_target("zerocopy", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/zerocopy-0.8.38/src/lib.rs", Edition2021) }
+   0.512149807s  INFO prepare_target{force=false package_id=zerocopy v0.8.38 target="zerocopy"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/zerocopy-9c5dac0607bb4efe/lib-zerocopy`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: cargo::core::compiler::compile
+   9: <cargo::core::compiler::build_runner::BuildRunner>::compile
+  10: cargo::ops::cargo_compile::compile_ws
+  11: cargo::ops::cargo_compile::compile_with_exec
+  12: cargo::ops::cargo_compile::compile
+  13: cargo::commands::check::exec
+  14: <cargo::cli::Exec>::exec
+  15: cargo::main
+  16: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  17: std::rt::lang_start::<()>::{closure#0}
+  18: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  23: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  24: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  25: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  26: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  27: main
+  28: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  29: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  30: <unknown>
+   0.513144721s  INFO prepare_target{force=false package_id=regex v1.12.3 target="regex"}: cargo::core::compiler::fingerprint: fingerprint error for regex v1.12.3/Check { test: false }/TargetInner { ..: lib_target("regex", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-1.12.3/src/lib.rs", Edition2021) }
+   0.513215044s  INFO prepare_target{force=false package_id=regex v1.12.3 target="regex"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/regex-58466e234a7151be/lib-regex`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.514188506s  INFO prepare_target{force=false package_id=regex-automata v0.4.14 target="regex_automata"}: cargo::core::compiler::fingerprint: fingerprint error for regex-automata v0.4.14/Check { test: false }/TargetInner { benched: false, ..: lib_target("regex_automata", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-automata-0.4.14/src/lib.rs", Edition2021) }
+   0.514259480s  INFO prepare_target{force=false package_id=regex-automata v0.4.14 target="regex_automata"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/regex-automata-54638efcb6f92c3e/lib-regex_automata`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.515373600s  INFO prepare_target{force=false package_id=regex-syntax v0.8.9 target="regex_syntax"}: cargo::core::compiler::fingerprint: fingerprint error for regex-syntax v0.8.9/Check { test: false }/TargetInner { ..: lib_target("regex_syntax", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/regex-syntax-0.8.9/src/lib.rs", Edition2021) }
+   0.515439025s  INFO prepare_target{force=false package_id=regex-syntax v0.8.9 target="regex_syntax"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/regex-syntax-8e867beed2423262/lib-regex_syntax`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: cargo::core::compiler::compile
+   8: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   9: cargo::ops::cargo_compile::compile_ws
+  10: cargo::ops::cargo_compile::compile_with_exec
+  11: cargo::ops::cargo_compile::compile
+  12: cargo::commands::check::exec
+  13: <cargo::cli::Exec>::exec
+  14: cargo::main
+  15: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  16: std::rt::lang_start::<()>::{closure#0}
+  17: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  18: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  19: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  20: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  21: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  22: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  23: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  24: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  25: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  26: main
+  27: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  28: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  29: <unknown>
+   0.516048063s  INFO prepare_target{force=false package_id=rkyv v0.8.14 target="rkyv"}: cargo::core::compiler::fingerprint: fingerprint error for rkyv v0.8.14/Check { test: false }/TargetInner { ..: lib_target("rkyv", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rkyv-0.8.14/src/lib.rs", Edition2021) }
+   0.516102851s  INFO prepare_target{force=false package_id=rkyv v0.8.14 target="rkyv"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/rkyv-a2c207d670592ab9/lib-rkyv`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.518397183s  INFO prepare_target{force=false package_id=rend v0.5.3 target="rend"}: cargo::core::compiler::fingerprint: fingerprint error for rend v0.5.3/Check { test: false }/TargetInner { ..: lib_target("rend", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/rend-0.5.3/src/lib.rs", Edition2021) }
+   0.518442778s  INFO prepare_target{force=false package_id=rend v0.5.3 target="rend"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/rend-8180f9ed625d97dd/lib-rend`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.519865904s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint: fingerprint error for serde v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde-1.0.228/src/lib.rs", Edition2021) }
+   0.519929839s  INFO prepare_target{force=false package_id=serde v1.0.228 target="serde"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/serde-5a057ae792a9a56b/lib-serde`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.521003977s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint: fingerprint error for serde_core v1.0.228/Check { test: false }/TargetInner { ..: lib_target("serde_core", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/serde_core-1.0.228/src/lib.rs", Edition2021) }
+   0.521079200s  INFO prepare_target{force=false package_id=serde_core v1.0.228 target="serde_core"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/serde_core-a9c81db0ee8d5111/lib-serde_core`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.522042430s  INFO prepare_target{force=false package_id=sha2 v0.10.9 target="sha2"}: cargo::core::compiler::fingerprint: fingerprint error for sha2 v0.10.9/Check { test: false }/TargetInner { ..: lib_target("sha2", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/sha2-0.10.9/src/lib.rs", Edition2018) }
+   0.522406843s  INFO prepare_target{force=false package_id=sha2 v0.10.9 target="sha2"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/sha2-cb32209765126f3c/lib-sha2`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.523214596s  INFO prepare_target{force=false package_id=tokio v1.49.0 target="tokio"}: cargo::core::compiler::fingerprint: fingerprint error for tokio v1.49.0/Check { test: false }/TargetInner { ..: lib_target("tokio", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-1.49.0/src/lib.rs", Edition2021) }
+   0.523244508s  INFO prepare_target{force=false package_id=tokio v1.49.0 target="tokio"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/tokio-50a466ff5eb5260b/lib-tokio`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.524436928s  INFO prepare_target{force=false package_id=tokio-postgres v0.7.16 target="tokio_postgres"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-postgres v0.7.16/Check { test: false }/TargetInner { tested: false, ..: lib_target("tokio_postgres", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-postgres-0.7.16/src/lib.rs", Edition2021) }
+   0.524476109s  INFO prepare_target{force=false package_id=tokio-postgres v0.7.16 target="tokio_postgres"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/tokio-postgres-b276e3a297b58c1f/lib-tokio_postgres`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   7: cargo::ops::cargo_compile::compile_ws
+   8: cargo::ops::cargo_compile::compile_with_exec
+   9: cargo::ops::cargo_compile::compile
+  10: cargo::commands::check::exec
+  11: <cargo::cli::Exec>::exec
+  12: cargo::main
+  13: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  14: std::rt::lang_start::<()>::{closure#0}
+  15: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  16: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  17: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  18: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  19: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  20: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  21: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  22: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  23: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  24: main
+  25: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  26: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  27: <unknown>
+   0.527410513s  INFO prepare_target{force=false package_id=futures-util v0.3.31 target="futures_util"}: cargo::core::compiler::fingerprint: fingerprint error for futures-util v0.3.31/Check { test: false }/TargetInner { ..: lib_target("futures_util", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/futures-util-0.3.31/src/lib.rs", Edition2018) }
+   0.527504924s  INFO prepare_target{force=false package_id=futures-util v0.3.31 target="futures_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/futures-util-6abeed24a5d52d31/lib-futures_util`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.532468210s  INFO prepare_target{force=false package_id=postgres-protocol v0.6.10 target="postgres_protocol"}: cargo::core::compiler::fingerprint: fingerprint error for postgres-protocol v0.6.10/Check { test: false }/TargetInner { ..: lib_target("postgres_protocol", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/postgres-protocol-0.6.10/src/lib.rs", Edition2021) }
+   0.532595025s  INFO prepare_target{force=false package_id=postgres-protocol v0.6.10 target="postgres_protocol"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/postgres-protocol-574374e2275c70cb/lib-postgres_protocol`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.537531501s  INFO prepare_target{force=false package_id=postgres-types v0.2.12 target="postgres_types"}: cargo::core::compiler::fingerprint: fingerprint error for postgres-types v0.2.12/Check { test: false }/TargetInner { ..: lib_target("postgres_types", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/postgres-types-0.2.12/src/lib.rs", Edition2021) }
+   0.537589414s  INFO prepare_target{force=false package_id=postgres-types v0.2.12 target="postgres_types"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/postgres-types-0eccebad3f759848/lib-postgres_types`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.538561605s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint: fingerprint error for tokio-util v0.7.18/Check { test: false }/TargetInner { ..: lib_target("tokio_util", ["lib"], "/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/tokio-util-0.7.18/src/lib.rs", Edition2021) }
+   0.538597009s  INFO prepare_target{force=false package_id=tokio-util v0.7.18 target="tokio_util"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/tokio-util-9cea8aec35d91333/lib-tokio_util`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: cargo::core::compiler::compile
+   6: cargo::core::compiler::compile
+   7: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   8: cargo::ops::cargo_compile::compile_ws
+   9: cargo::ops::cargo_compile::compile_with_exec
+  10: cargo::ops::cargo_compile::compile
+  11: cargo::commands::check::exec
+  12: <cargo::cli::Exec>::exec
+  13: cargo::main
+  14: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  15: std::rt::lang_start::<()>::{closure#0}
+  16: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  17: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  18: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  19: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  20: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  21: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  22: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  23: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  24: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  25: main
+  26: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  27: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  28: <unknown>
+   0.539561582s  INFO prepare_target{force=false package_id=nekocat v0.0.1 (/home/pas/Sources/nekocat/app) target="nekocat"}: cargo::core::compiler::fingerprint: fingerprint error for nekocat v0.0.1 (/home/pas/Sources/nekocat/app)/Check { test: true }/TargetInner { name_inferred: true, ..: lib_target("nekocat", ["lib"], "/home/pas/Sources/nekocat/app/src/lib.rs", Edition2024) }
+   0.539594605s  INFO prepare_target{force=false package_id=nekocat v0.0.1 (/home/pas/Sources/nekocat/app) target="nekocat"}: cargo::core::compiler::fingerprint:     err: failed to read `/home/pas/Sources/nekocat/app/target/debug/.fingerprint/nekocat-fa8d2448e203616d/test-lib-nekocat`
+
+Caused by:
+    No such file or directory (os error 2)
+
+Stack backtrace:
+   0: cargo_util::paths::read_bytes
+   1: cargo_util::paths::read
+   2: cargo::core::compiler::fingerprint::_compare_old_fingerprint
+   3: cargo::core::compiler::fingerprint::prepare_target
+   4: cargo::core::compiler::compile
+   5: <cargo::core::compiler::build_runner::BuildRunner>::compile
+   6: cargo::ops::cargo_compile::compile_ws
+   7: cargo::ops::cargo_compile::compile_with_exec
+   8: cargo::ops::cargo_compile::compile
+   9: cargo::commands::check::exec
+  10: <cargo::cli::Exec>::exec
+  11: cargo::main
+  12: std::sys::backtrace::__rust_begin_short_backtrace::<fn(), ()>
+  13: std::rt::lang_start::<()>::{closure#0}
+  14: core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/core/src/ops/function.rs:287:21
+  15: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  16: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  17: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  18: std::rt::lang_start_internal::{{closure}}
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:175:24
+  19: std::panicking::catch_unwind::do_call
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:590:40
+  20: std::panicking::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panicking.rs:553:19
+  21: std::panic::catch_unwind
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/panic.rs:359:14
+  22: std::rt::lang_start_internal
+             at /rustc/f8297e351a40c1439a467bbbb6879088047f50b3/library/std/src/rt.rs:171:5
+  23: main
+  24: __libc_start_call_main
+             at ./csu/../sysdeps/nptl/libc_start_call_main.h:58:16
+  25: __libc_start_main_impl
+             at ./csu/../csu/libc-start.c:360:3
+  26: <unknown>
+    Checking zerocopy v0.8.38
+    Checking sha2 v0.10.9
+    Checking tokio v1.49.0
+    Checking regex-syntax v0.8.9
+    Checking rend v0.5.3
+    Checking futures-util v0.3.31
+    Checking serde_core v1.0.228
+    Checking aes v0.8.4
+    Checking chrono v0.4.43
+    Checking argon2 v0.5.3
+    Checking pqcrypto-mldsa v0.1.2
+    Checking hkdf v0.12.4
+    Checking colorful v0.3.2
+    Checking hex v0.4.3
+    Checking aes-gcm-siv v0.11.1
+    Checking regex-automata v0.4.14
+    Checking serde v1.0.228
+    Checking tokio-util v0.7.18
+    Checking rkyv v0.8.14
+    Checking regex v1.12.3
+    Checking ppv-lite86 v0.2.21
+    Checking rand_chacha v0.9.0
+    Checking rand v0.9.2
+    Checking postgres-protocol v0.6.10
+    Checking postgres-types v0.2.12
+    Checking tokio-postgres v0.7.16
+    Checking nekocat v0.0.1 (/home/pas/Sources/nekocat/app)
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 25.55s

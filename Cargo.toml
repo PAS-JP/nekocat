@@ -1,0 +1,13 @@
+[package]
+name = "nekocat"
+version = "0.0.1"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = [
+    "tests/*",
+    "tests",
+    "main.rs"
+]
+
+[dependencies]

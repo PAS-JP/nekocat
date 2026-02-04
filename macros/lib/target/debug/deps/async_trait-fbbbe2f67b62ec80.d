@@ -1,0 +1,12 @@
+/home/pas/Sources/nekocat/app/target/debug/deps/async_trait-fbbbe2f67b62ec80.d: /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lib.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/args.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/bound.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/expand.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lifetime.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/parse.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/receiver.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/verbatim.rs
+
+/home/pas/Sources/nekocat/app/target/debug/deps/libasync_trait-fbbbe2f67b62ec80.so: /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lib.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/args.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/bound.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/expand.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lifetime.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/parse.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/receiver.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/verbatim.rs
+
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lib.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/args.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/bound.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/expand.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/lifetime.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/parse.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/receiver.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/async-trait-0.1.89/src/verbatim.rs:

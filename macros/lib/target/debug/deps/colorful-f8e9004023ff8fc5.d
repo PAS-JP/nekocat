@@ -1,0 +1,12 @@
+/home/pas/Sources/nekocat/app/target/debug/deps/colorful-f8e9004023ff8fc5.d: /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/lib.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/mod.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/colors.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/symbols.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/style.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/color_string.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/rgb.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/hsl.rs
+
+/home/pas/Sources/nekocat/app/target/debug/deps/libcolorful-f8e9004023ff8fc5.rmeta: /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/lib.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/mod.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/colors.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/symbols.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/style.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/color_string.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/rgb.rs /home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/hsl.rs
+
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/lib.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/mod.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/colors.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/symbols.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/style.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/color_string.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/rgb.rs:
+/home/pas/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/colorful-0.3.2/src/core/hsl.rs:

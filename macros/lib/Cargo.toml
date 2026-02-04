@@ -1,0 +1,46 @@
+[package]
+name = "nekocatmacroslib"
+version = "0.0.1"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+exclude = [
+    "tests/*",
+    "tests",
+    "main.rs"
+]
+
+[dependencies]
+regex = { version = "1"}
+tokio = { version = "1", features = ["macros", "rt-multi-thread"]}
+chrono = { version = "0"}
+colorful = { version = "0"}
+hex = { version = "0"}
+rand = { version = "0"}
+pqcrypto-mlkem = { version = "0"}
+pqcrypto-mldsa = { version = "0"}
+pqcrypto-traits = { version = "0"}
+aes-gcm-siv = { version = "0"}
+chacha20poly1305 = { version = "0"}
+argon2 = { version = "0"}
+serde = { version = "1", features = ["derive"]}
+tokio-postgres = "0"
+rkyv = "0"
+sha2 = "0"
+hkdf = "0"
+
+[features]
+default = ["full"]
+builder = []
+cipher = ["chacha", "argon", "aes"]
+aes = []
+argon = []
+chacha = []
+pqcrypto = []
+print = []
+math = []
+parser = []
+search = []
+sql = []
+path2enum = []
+full = ["builder", "pqcrypto", "aes", "cipher", "argon", "chacha", "print", "math", "parser", "search", "sql", "path2enum"]
