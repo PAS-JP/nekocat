@@ -4,6 +4,11 @@ version = "0.0.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
+authors = ["RustArchitecture <pedro.augusto.schroeder@gmail.com>"]
+description = "..."
+repository = "https://github.com/RustArchitecture/nekocat/macros/lib"
+homepage = "https://github.com/RustArchitecture/nekocat/macros/lib"
+documentation = "https://github.com/RustArchitecture/nekocat/macros/lib/tests"
 exclude = [
     "tests/*",
     "tests",

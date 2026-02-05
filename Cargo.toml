@@ -4,11 +4,11 @@ version = "0.0.1"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
-authors = ["RustArchitecture <pedro.augusto.schroeder@gmail.com>"]
+authors = ["PAS-JP <pedro.augusto.schroeder@gmail.com>"]
 description = "..."
-repository = "https://github.com/RustArchitecture/nekocat"
-homepage = "https://github.com/RustArchitecture/nekocat"
-documentation = "https://github.com/RustArchitecture/nekocat/tests"
+repository = "https://github.com/PAS-JP/nekocat"
+homepage = "https://github.com/PAS-JP/nekocat"
+documentation = "https://github.com/PAS-JP/nekocat/tests"
 
 exclude = [
     "tests/*",
