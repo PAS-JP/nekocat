@@ -1,6 +1,6 @@
 [package]
 name = "nekocat"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -17,4 +17,61 @@ exclude = [
 ]
 
 [dependencies]
-nekocatmacrosapp = "0.0.1"
+regex = { version = "1.12.3", optional = true }
+tokio = { version = "1.49.0", features = ["macros", "rt-multi-thread"], optional = true }
+chrono = { version = "0.4.43", optional = true }
+colorful = { version = "0.3.2", optional = true }
+hex = { version = "0.4.3", optional = true }
+rand = { version = "0.10.0", optional = true }
+
+aes-gcm-siv = { version = "0.11.1", optional = true }
+chacha20poly1305 = { version = "0.10.1", optional = true }
+argon2 = { version = "0.5.3", optional = true }
+
+serde = { version = "1.0.228", features = ["derive"], optional = true }
+tokio-postgres = { version = "0.7.16", optional = true }
+rkyv = { version = "0.8.15", optional = true }
+serde_json = { version = "1.0.149", optional = true }
+
+nekocatmacrosapp = { version = "0.0.2", default-features =  false }
+
+[dev-dependencies]
+dotenvy = "0.15.7"
+
+[features]
+default = ["builder"]
+
+builder = ["nekocatmacrosapp/builder", "dep:regex"]
+
+# crypto granular
+aes = ["dep:aes-gcm-siv"]
+chacha = ["dep:chacha20poly1305"]
+argon = ["dep:argon2"]
+
+cipher = [
+    "aes",
+    "chacha",
+    "argon",
+    "dep:hex",
+    "dep:rand",
+    "dep:rkyv",
+    "nekocatmacrosapp/cipher"
+]
+
+print = ["dep:colorful", "nekocatmacrosapp/print", "dep:chrono"]
+math = ["nekocatmacrosapp/math"]
+parser = ["dep:regex", "nekocatmacrosapp/parser", "dep:serde_json", "dep:serde"]
+search = ["dep:regex", "nekocatmacrosapp/search"]
+sql = ["dep:tokio-postgres", "dep:tokio", "nekocatmacrosapp/sql"]
+path2enum = ["nekocatmacrosapp/path2enum", "dep:chrono"]
+
+full = [
+    "builder",
+    "cipher",
+    "print",
+    "math",
+    "parser",
+    "search",
+    "sql",
+    "path2enum"
+]
