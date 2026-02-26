@@ -1,6 +1,6 @@
 pub use nekocatmacrosapp::*;
 
-#[cfg(any(feature = "parser", feature = "search"))]
+#[cfg(any(feature = "parser", feature = "search", feature = "builder"))]
 pub use regex;
 
 #[cfg(feature = "sql")]
