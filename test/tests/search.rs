@@ -1,4 +1,3 @@
-#![cfg(feature = "search")]
 use nekocat::Search;
 
 const EPS: f32 = 1e-6;

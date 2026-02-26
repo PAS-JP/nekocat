@@ -1,4 +1,3 @@
-#![cfg(feature = "parser")]
 use nekocat::Parser;
 use nekocat::rkyv::{Archive, Deserialize as RkyvDeserialize, Serialize as RkyvSerialize};
 use nekocat::serde::{Deserialize, Serialize};

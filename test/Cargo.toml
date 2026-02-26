@@ -1,0 +1,23 @@
+[package]
+name = "nekocatest"
+version = "0.0.4"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+authors = ["PAS-JP <pedro.augusto.schroeder@gmail.com>"]
+description = "..."
+repository = "https://github.com/PAS-JP/nekocat"
+homepage = "https://github.com/PAS-JP/nekocat"
+documentation = "https://github.com/PAS-JP/nekocat/tests"
+
+exclude = [
+    "tests/*",
+    "tests",
+    "main.rs"
+]
+
+[dependencies]
+nekocat = { version = "*", features = ["full"]}
+
+[dev-dependencies]
+dotenvy = "*"

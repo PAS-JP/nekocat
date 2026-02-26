@@ -1,4 +1,3 @@
-#![cfg(feature = "sql")]
 use nekocat::Sql;
 use nekocat::sql_ext::tokio_postgres::{Client, NoTls};
 

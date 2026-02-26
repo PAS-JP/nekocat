@@ -1,4 +1,3 @@
-#![cfg(feature = "print")]
 use nekocat::Print;
 
 #[derive(Debug, Print, Default, Clone)]

@@ -1,4 +1,3 @@
-#![cfg(all(feature = "math", feature = "builder"))]
 use nekocat::{Builder, Math};
 
 #[derive(Debug, Builder, Math, Clone)]

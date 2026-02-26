@@ -1,4 +1,3 @@
-#![cfg(feature = "cipher")]
 use nekocat::Cipher;
 use nekocat::rkyv::{Archive, Deserialize, Serialize};
 

@@ -1,5 +1,3 @@
-#![cfg(feature = "path2enum")]
-
 use nekocat::path2enum;
 
 #[path2enum(path = "tests/assets", ext = "svg,toml")]

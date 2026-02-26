@@ -33,10 +33,11 @@ tokio-postgres = { version = "0.7.16", optional = true }
 rkyv = { version = "0.8.15", optional = true }
 serde_json = { version = "1.0.149", optional = true }
 
-nekocatmacrosapp = { version = "0.0.2", default-features =  false }
+nekocatmacrosapp = { version = "0.0.4", default-features =  false }
 
 [dev-dependencies]
 dotenvy = "0.15.7"
+
 
 [features]
 default = ["builder"]
