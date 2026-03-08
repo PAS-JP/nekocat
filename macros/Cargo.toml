@@ -1,0 +1,40 @@
+[package]
+name = "nekocatmacrosapp"
+version = "0.0.5"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+readme = "README.md"
+authors = ["PAS-JP <pedro.augusto.schroeder@gmail.com>"]
+description = "..."
+repository = "https://github.com/PAS-JP/nekocat/macros/app"
+homepage = "https://github.com/PAS-JP/nekocat/macros/app"
+documentation = "https://github.com/PAS-JP/nekocat/macros/app/tests"
+exclude = [
+    "tests/*",
+    "tests",
+    "main.rs"
+]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn = { version = "2.0.117", features = ["full", "visit", "visit-mut"] }
+quote = "1.0.44"
+proc-macro2 =  "1.0.106"
+
+[features]
+default = ["full"]
+builder = []
+cipher = ["chacha", "argon", "aes"]
+aes = []
+argon = []
+chacha = []
+#pqcrypto = []
+print = []
+math = []
+parser = []
+search = []
+sql = []
+path2enum = []
+full = ["builder", "aes", "cipher", "argon", "chacha", "print", "math", "parser", "search", "sql", "path2enum"]
