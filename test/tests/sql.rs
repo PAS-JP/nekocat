@@ -1,5 +1,6 @@
 use nekocat::Sql;
-use nekocat::sql_ext::tokio_postgres::{Client, NoTls};
+use nekocat::tokio::spawn;
+use nekocat::tokio_postgres::{Client, NoTls, connect};
 
 #[derive(Sql)]
 struct CUser {
@@ -12,14 +13,14 @@ struct CUser {
 }
 
 async fn setup_db() -> Client {
-    let (client, connection) = tokio_postgres::connect(
+    let (client, connection) = connect(
         "host=localhost user=postgres password=12345 dbname=postgres",
         NoTls,
     )
     .await
     .expect("Failed to connect to database");
 
-    tokio::spawn(async move {
+    spawn(async move {
         if let Err(e) = connection.await {
             eprintln!("connection error: {e}");
         }
@@ -32,7 +33,7 @@ async fn setup_db() -> Client {
     client
 }
 
-#[tokio::test]
+#[nekocat::tokio::test]
 async fn sql_basic() {
     let client = setup_db().await;
 

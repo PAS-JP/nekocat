@@ -27,7 +27,7 @@ pub struct Friend {
     name: String,
 }
 
-#[tokio::test]
+#[nekocat::tokio::test]
 async fn test_print_user() {
     let user = User {
         id: 1,

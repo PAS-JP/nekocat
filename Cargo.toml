@@ -1,6 +1,6 @@
 [package]
 name = "nekocat"
-version = "0.0.5"
+version = "0.0.6"
 edition = "2024"
 license = "MIT OR Apache-2.0"
 readme = "README.md"
@@ -31,9 +31,10 @@ argon2 = { version = "0.5.3", optional = true }
 serde = { version = "1.0.228", features = ["derive"], optional = true }
 tokio-postgres = { version = "0.7.16", optional = true }
 rkyv = { version = "0.8.15", optional = true }
+rancor = { version = "0.1.1", optional = true }
 serde_json = { version = "1.0.149", optional = true }
 
-nekocatmacrosapp = { version = "0.0.4", default-features =  false }
+nekocatmacrosapp = { path = "./macros", default-features =  false }
 
 [dev-dependencies]
 dotenvy = "0.15.7"
@@ -56,6 +57,7 @@ cipher = [
     "dep:hex",
     "dep:rand",
     "dep:rkyv",
+    "dep:rancor",
     "nekocatmacrosapp/cipher"
 ]
 

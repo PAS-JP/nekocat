@@ -1,10 +1,9 @@
-use nekocat::Cipher;
-use nekocat::rkyv::{Archive, Deserialize, Serialize};
+use nekocat::cipher;
 
 const SECRET: &str = "SECRET_ENV";
 
-#[derive(Cipher, Archive, Serialize, Deserialize, PartialEq, Eq, Debug, Clone)]
-#[rkyv(compare(PartialEq), derive(Debug))]
+#[derive(PartialEq, Eq, Debug, Clone)]
+#[cipher]
 pub struct Secret {
     #[opt(
         aes_secret_key = SECRET,
@@ -14,11 +13,10 @@ pub struct Secret {
     pwd: String,
 }
 
-#[derive(Cipher, Archive, Serialize, Deserialize, PartialEq, Eq, Debug, Clone)]
-#[rkyv(compare(PartialEq), derive(Debug))]
+#[derive(PartialEq, Eq, Debug, Clone)]
+#[cipher]
 pub struct User {
     name: String,
-
     #[opt(
        aes_secret_key = SECRET,
         argon2_secret_pepper = SECRET,

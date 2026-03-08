@@ -4,19 +4,19 @@ pub use nekocatmacrosapp::*;
 pub use regex;
 
 #[cfg(feature = "sql")]
-pub mod sql_ext {
-    pub use tokio;
-    pub use tokio_postgres;
-}
+pub use tokio;
+
+#[cfg(feature = "sql")]
+pub use tokio_postgres;
 
 #[cfg(feature = "print")]
 pub use colorful;
 
 #[cfg(feature = "cipher")]
-pub mod crypto_utils {
-    pub use hex;
-    pub use rand;
-}
+pub use hex;
+
+#[cfg(feature = "cipher")]
+pub use rand;
 
 #[cfg(feature = "aes")]
 pub use aes_gcm_siv;
@@ -33,5 +33,11 @@ pub use chrono;
 #[cfg(feature = "parser")]
 pub use serde;
 
+#[cfg(feature = "parser")]
+pub use serde_json;
+
 #[cfg(any(feature = "cipher", feature = "parser"))]
 pub use rkyv;
+
+#[cfg(any(feature = "cipher", feature = "parser"))]
+pub use rancor;

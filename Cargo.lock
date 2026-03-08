@@ -611,7 +611,7 @@ dependencies = [
 
 [[package]]
 name = "nekocat"
-version = "0.0.5"
+version = "0.0.6"
 dependencies = [
  "aes-gcm-siv",
  "argon2",
@@ -621,6 +621,7 @@ dependencies = [
  "dotenvy",
  "hex",
  "nekocatmacrosapp",
+ "rancor",
  "rand 0.10.0",
  "regex",
  "rkyv",
@@ -632,9 +633,7 @@ dependencies = [
 
 [[package]]
 name = "nekocatmacrosapp"
-version = "0.0.4"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "af431c5e7334a13efad83c820f9975e9be9a43e9c397c9d23569eca9f9cf26c6"
+version = "0.0.5"
 dependencies = [
  "proc-macro2",
  "quote",

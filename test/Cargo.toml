@@ -17,7 +17,8 @@ exclude = [
 ]
 
 [dependencies]
-nekocat = { version = "*", features = ["full"]}
+nekocat = { path = "..", features = ["full"]}
 
 [dev-dependencies]
 dotenvy = "*"
+tokio = "*"

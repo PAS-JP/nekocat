@@ -1,21 +1,7 @@
-use nekocat::Parser;
-use nekocat::rkyv::{Archive, Deserialize as RkyvDeserialize, Serialize as RkyvSerialize};
-use nekocat::serde::{Deserialize, Serialize};
+use nekocat::parser;
 
-#[derive(
-    Parser,
-    Archive,
-    RkyvSerialize,
-    RkyvDeserialize,
-    Serialize,
-    Deserialize,
-    Debug,
-    PartialEq,
-    Eq,
-    Hash,
-    Clone,
-)]
-#[rkyv(compare(PartialEq), derive(Debug))]
+#[parser]
+#[derive(Debug, PartialEq, Eq, Hash, Clone)]
 struct User {
     name: String,
     friend: Friend,
@@ -24,20 +10,8 @@ struct User {
     bool: bool,
 }
 
-#[derive(
-    Parser,
-    Archive,
-    RkyvSerialize,
-    RkyvDeserialize,
-    Serialize,
-    Deserialize,
-    Debug,
-    PartialEq,
-    Eq,
-    Hash,
-    Clone,
-)]
-#[rkyv(compare(PartialEq), derive(Debug))]
+#[parser]
+#[derive(Debug, PartialEq, Eq, Hash, Clone)]
 pub struct Friend {
     name: String,
 }
