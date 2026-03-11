@@ -10,7 +10,7 @@ pub fn cipher_app(input: &DeriveInput) -> proc_macro2::TokenStream {
 
     let field_methods: Vec<_> = fields
         .iter()
-        .filter(|f| is_string(&f.ty) || is_str_ref(&f.ty))
+        .filter(|f| is_string(&f.ty) || is_str_ref(&f.ty) || is_vec_u8(&f.ty))
         .map(|f| cipher_field_methods(input, f))
         .collect();
 

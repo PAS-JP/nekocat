@@ -23,6 +23,48 @@ pub struct User {
         chacha_secret_key = SECRET
     )]
     password: String,
+    #[opt(
+       aes_secret_key = SECRET,
+        argon2_secret_pepper = SECRET,
+        chacha_secret_key = SECRET
+    )]
+    bytes: Vec<u8>,
+}
+
+#[test]
+fn chacha20_poly1305_user_encrypt_and_decrypt_bytes() {
+    dotenvy::dotenv().unwrap();
+    let original_data = vec![0xDE, 0xAD, 0xBE, 0xEF, 0x00, 0x01];
+    let user = User {
+        name: String::from("test"),
+        password: String::from("test"),
+        bytes: original_data.clone(),
+    };
+
+    let (ct, nonce) = user.chacha20_poly1305_encrypt_bytes().unwrap();
+    assert!(!ct.is_empty());
+    assert_eq!(nonce.len(), 12);
+
+    let dec_bytes: Vec<u8> = User::chacha20_poly1305_decrypt_bytes(ct, nonce).unwrap();
+    assert_eq!(dec_bytes, original_data);
+}
+
+#[test]
+fn aes_256_gcm_siv_user_encrypt_and_decrypt_bytes() {
+    dotenvy::dotenv().unwrap();
+    let original_data = vec![0x48, 0x65, 0x6C, 0x6C, 0x6F];
+    let user = User {
+        name: String::from("test"),
+        password: String::from("test"),
+        bytes: original_data.clone(),
+    };
+
+    let (ct, nonce) = user.aes_256_gcm_siv_encrypt_bytes().unwrap();
+    assert!(!ct.is_empty());
+    assert_eq!(nonce.len(), 12);
+
+    let dec_bytes: Vec<u8> = User::aes_256_gcm_siv_decrypt_bytes(ct, nonce).unwrap();
+    assert_eq!(dec_bytes, original_data);
 }
 
 #[test]
@@ -31,6 +73,7 @@ fn aes_256_gcm_siv_user_encrypt_and_decrypt_name_and_password() {
     let user = User {
         name: String::from("aes_name"),
         password: String::from("aes_password"),
+        bytes: Vec::new(),
     };
     let (ct_name, nonce_name) = user.aes_256_gcm_siv_encrypt_name().unwrap();
     assert!(!ct_name.is_empty(), "ciphertext should not be empty");
@@ -55,6 +98,7 @@ fn chacha20_poly1305_user_encrypt_and_decrypt_name_and_password() {
     let user = User {
         name: String::from("chacha_name"),
         password: String::from("chacha_password"),
+        bytes: Vec::new(),
     };
 
     let (ct_name, nonce_name) = user.chacha20_poly1305_encrypt_name().unwrap();
@@ -84,6 +128,7 @@ fn argon2_hash_and_verify_password() {
     let user = User {
         name: "example".to_string(),
         password: "supersecret".to_string(),
+        bytes: Vec::new(),
     };
 
     let hash = user
